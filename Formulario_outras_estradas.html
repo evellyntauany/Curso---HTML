@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderzadas-->
+<html lang="pt-br">
+
+<head>
+    <title>Pagina de exemplo estrutura basica </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel">
+    <meta name="description" content="lista de documentos">
+    <meta name="keywords" content="html5, tecnologia">
+</head>
+
+<body>
+    <h1>Outras formas de entrada de dados- Formulario</h1>
+    <form action="#" method="POST" class="formLogin">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label>Email</label>
+            <input type="email" required>
+            <br>
+            <label>numero de filhos</label>
+            <input type="number" min="0" max="1000">
+
+            <br>
+            <label>nascimento</label>
+            <input type="date" min="2019-14-30" max="2138-01-30">
+
+            <p>Sexo:</p>
+            <label>
+                <input type="radio" name="sexo" value="m">
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="f">
+                Feminino
+            </label>
+            <br>
+            <label>Estado</label>
+            <select>
+                <option value="0">Selecione</option>
+                <option value="SP">Sao Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="PR">Parana</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Área de interesse</legend>
+
+            <label><input type="checkbox" name="html" value="html">HTML</label>
+            <label><input type="checkbox" name="css" value="css">CSS</label>
+            <label><input type="checkbox" name="javascript" value="javascript">Javascript</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+
+            <textarea style="resize:none" name="msg" cols="30" rows="10"></textarea>
+
+            <textarea name="contrato" cols="30" rows="10" readonly>Aqui entra o texto do contrato que precisa ser aceito</textarea>
+            <label>
+                <input type="checkbox">Li e aceito
+            </label>
+
+        </fieldset>
+        <br>
+        <input type="submit" value="mandar">
+
+
+    </form>
+</body>
+
+</html>
